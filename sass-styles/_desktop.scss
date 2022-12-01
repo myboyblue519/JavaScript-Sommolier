@@ -1,0 +1,157 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.how-to{
+    @include general-grid;
+    text-align:center;
+    margin:5% auto;
+
+    h3{
+        margin:20px auto;
+    }
+    span{
+        @include tutorial-span;
+    }
+    .about-steps{
+        @include tutorial-steps;
+        p{
+            @include tutorial-p
+        }
+    }
+}
+
+.wine-input{
+    @include general-grid;
+    @include app-border;
+    margin:1% auto;
+    
+    p{
+        @include upper-ubuntu-w;
+        margin:18px 0;
+    }
+    .choose{
+        font-size:1.3rem;
+    }
+    form{
+        @include general-grid;
+        gap:5rem;
+        margin:5% 0;
+        height:10vh;
+    }
+    .choose-wine{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        @include upper-ubuntu-rose;
+        border:hidden;
+        padding:0;
+
+        legend{
+            grid-row:span 2;
+            margin-left:30px;
+        }
+        div{
+            margin-top:20%;
+        }
+    }
+    .wine-radios{
+        display:flex;
+        justify-content:center;
+    }
+    label{
+        @include upper-ubuntu-w;
+    }
+    .varietal-container{
+        @include app-form;
+        
+        label{
+            @include upper-ubuntu-rose;
+            padding:0;
+        }
+        .white-wine-list, .red-wine-list{
+            @include app-input;
+            width:90%;
+        }
+    }
+}
+
+.meal-suggestion{
+    @include general-grid;
+    text-align: center;
+    margin:5% auto;
+
+    p{
+        @include upper-ubuntu-w;
+        margin:5% auto;
+    }
+    a{
+        text-decoration:none;
+        color:$rose;
+    }
+}
+
+.somm-about{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 5rem;
+        text-align:center;
+        margin:5% auto;
+        
+        .about-left{
+            grid-column: span 2;
+        }
+        h3{
+            margin:20px auto;
+        }
+        span{
+            @include tutorial-span;
+        }
+        .about-steps{
+            @include tutorial-steps;
+            grid-column: span 2;
+            p{
+                @include tutorial-p
+            }
+        }
+}
+
+.food-input{
+    @include app-border;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+    margin-bottom:5%;
+
+    div{
+        margin-bottom:3%;
+    }
+    h2{
+        grid-column:span 2;
+        margin:1% auto;
+    }
+    form{
+        @include app-form;
+    }
+    input{
+        @include app-input;
+        width:66%;
+    }
+    label, p{
+        @include upper-ubuntu-w;
+    }
+}
+
+footer{
+    @include upper-ubuntu-w;
+    margin:1% auto;
+
+    ul{
+        display:flex;
+        justify-content: space-evenly;
+        margin:1% auto;
+        list-style:none;
+    }
+    a{
+        text-decoration:none;
+        color:$rose;
+    }
+}

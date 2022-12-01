@@ -1,0 +1,77 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+@media (max-width:480px){
+    img{
+        width:100%;
+    }
+
+    .how-to{
+        grid-template-columns:1fr;
+        gap:1rem;
+    
+        .about-steps{
+            grid-template-columns:1fr;
+            
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .wine-input{
+        grid-template-rows:1fr 2fr;
+        grid-template-columns:1fr;
+        gap:1rem;
+
+        form{
+            grid-template-columns: 1fr;
+            gap:1rem;
+            margin:0 auto;
+            height:auto;
+        }
+        .choose-wine{
+            legend{
+                margin:0 auto;
+            }
+        }
+    }
+
+    .meal-suggestion{
+        grid-template-columns: 1fr;
+        gap:1rem;
+
+        .meal-suggestion-text{
+            grid-row:1;
+        }
+    }
+
+    .somm-about{
+        display:block;
+
+        .about-steps{
+            display:block;
+
+            p{
+                text-align: center;
+                margin:10px auto;
+            }
+        }
+    }
+
+    .food-input{
+        display:block;
+        margin-bottom:10%;
+    }
+
+    footer{
+        ul{
+            display:none;
+        }
+    }
+
+
+
+
+
+}

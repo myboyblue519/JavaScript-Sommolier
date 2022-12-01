@@ -1,0 +1,57 @@
+@use './variables' as *;
+
+@mixin upper-ubuntu-w{
+    font-family:$primary-font;
+    text-transform:uppercase;
+    color:$white-wine;
+    text-align:center;
+}
+
+@mixin upper-ubuntu-rose{
+    font-family:$primary-font;
+    text-transform:uppercase;
+    color:$rose;
+    text-align:center;
+}
+
+@mixin general-grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:5rem;
+}
+
+@mixin tutorial-span{
+    @include upper-ubuntu-rose;
+    font-size:1.5rem;
+    font-weight: 700;
+}
+
+@mixin tutorial-steps{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:1rem;
+}
+
+@mixin tutorial-p{
+    @include upper-ubuntu-w;
+    font-size:1.2rem;
+    text-align:left;
+    margin:5px 0;
+}
+
+@mixin app-border {
+    border:5px solid $white-wine;    
+}
+
+@mixin app-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+@mixin app-input{
+    height:1.5rem;
+    margin:18px 0;
+    padding:0;
+    border:0;
+}

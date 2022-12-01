@@ -1,0 +1,655 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+  overflow-x: none;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1620px;
+  margin: 0 auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+body {
+  background-color: #330011;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #fa849f;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+hr {
+  height: 5px;
+  background-color: #EDE9D8;
+  color: #EDE9D8;
+}
+
+img {
+  max-width: 408px;
+  max-height: 408px;
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  background-color: #EDE9D8;
+  color: #330011;
+  border-radius: 10%;
+  transition: all 0.5s ease-in;
+}
+button:hover, button :focus {
+  background-color: #330011;
+  color: #EDE9D8;
+}
+
+input[type=radio] {
+  transition: all 0.5s ease-in;
+}
+input[type=radio]:hover, input[type=radio] :focus {
+  scale: 200%;
+  transform: translateX(-10%);
+  transform: translateY(-5%);
+}
+
+header {
+  background-color: #330011;
+  color: #EDE9D8;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+header ul a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.design {
+  background-image: url("../assets/header-one-unsplash-crop.jpg");
+  width: 100%;
+  height: 60vh;
+}
+
+.headerContent {
+  position: relative;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  font-size: 3.5rem;
+  background-color: #330011;
+  border: 2px solid #EDE9D8;
+  width: 33%;
+  position: absolute;
+  top: 45%;
+}
+
+.toggleButton {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media (max-width: 480px) {
+  .toggleButton {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+  }
+  .navBarLinks {
+    display: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .navBarLinks ul {
+    background-color: #330011;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navBarLinks li {
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    color: #EDE9D8;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .navBarLinks.active {
+    display: flex;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .design {
+    background-image: url("..//assets/mae-mu-header.jpg");
+    background-size: cover;
+  }
+  h1 {
+    width: 100%;
+    font-size: 2rem;
+    position: static;
+    margin: 0;
+  }
+}
+.how-to {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  text-align: center;
+  margin: 5% auto;
+}
+.how-to h3 {
+  margin: 20px auto;
+}
+.how-to span {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #fa849f;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.how-to .about-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.how-to .about-steps p {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.wine-input {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  border: 5px solid #EDE9D8;
+  margin: 1% auto;
+}
+.wine-input p {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  margin: 18px 0;
+}
+.wine-input .choose {
+  font-size: 1.3rem;
+}
+.wine-input form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  gap: 5rem;
+  margin: 5% 0;
+  height: 10vh;
+}
+.wine-input .choose-wine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #fa849f;
+  text-align: center;
+  border: hidden;
+  padding: 0;
+}
+.wine-input .choose-wine legend {
+  grid-row: span 2;
+  margin-left: 30px;
+}
+.wine-input .choose-wine div {
+  margin-top: 20%;
+}
+.wine-input .wine-radios {
+  display: flex;
+  justify-content: center;
+}
+.wine-input label {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+}
+.wine-input .varietal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wine-input .varietal-container label {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #fa849f;
+  text-align: center;
+  padding: 0;
+}
+.wine-input .varietal-container .white-wine-list, .wine-input .varietal-container .red-wine-list {
+  height: 1.5rem;
+  margin: 18px 0;
+  padding: 0;
+  border: 0;
+  width: 90%;
+}
+
+.meal-suggestion {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  text-align: center;
+  margin: 5% auto;
+}
+.meal-suggestion p {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  margin: 5% auto;
+}
+.meal-suggestion a {
+  text-decoration: none;
+  color: #fa849f;
+}
+
+.somm-about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  text-align: center;
+  margin: 5% auto;
+}
+.somm-about .about-left {
+  grid-column: span 2;
+}
+.somm-about h3 {
+  margin: 20px auto;
+}
+.somm-about span {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #fa849f;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.somm-about .about-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-column: span 2;
+}
+.somm-about .about-steps p {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.food-input {
+  border: 5px solid #EDE9D8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 5%;
+}
+.food-input div {
+  margin-bottom: 3%;
+}
+.food-input h2 {
+  grid-column: span 2;
+  margin: 1% auto;
+}
+.food-input form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.food-input input {
+  height: 1.5rem;
+  margin: 18px 0;
+  padding: 0;
+  border: 0;
+  width: 66%;
+}
+.food-input label, .food-input p {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+}
+
+footer {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #EDE9D8;
+  text-align: center;
+  margin: 1% auto;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1% auto;
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fa849f;
+}
+
+@media (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+  .how-to {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .how-to .about-steps {
+    grid-template-columns: 1fr;
+  }
+  .how-to .about-steps p {
+    text-align: center;
+  }
+  .wine-input {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .wine-input form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    height: auto;
+  }
+  .wine-input .choose-wine legend {
+    margin: 0 auto;
+  }
+  .meal-suggestion {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .meal-suggestion .meal-suggestion-text {
+    grid-row: 1;
+  }
+  .somm-about {
+    display: block;
+  }
+  .somm-about .about-steps {
+    display: block;
+  }
+  .somm-about .about-steps p {
+    text-align: center;
+    margin: 10px auto;
+  }
+  .food-input {
+    display: block;
+    margin-bottom: 10%;
+  }
+  footer ul {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

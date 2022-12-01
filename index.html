@@ -1,0 +1,230 @@
+<!--WIREFRAME BY MATT, PSEUDOCODE BY PAUL  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0499a3b8f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Project 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass-styles/styles.css" />
+  </head>
+  <!-- HEADER AND NAV BAR START-->
+  <header class="indexHeader">
+    <nav class="navBar wrapper">
+      <div class="toggleButton">
+        <!-- <i class="fa-solid fa-wine-glass fa-2xl"></i> -->
+        <!-- <i class="fa-solid fa-wine-bottle fa-2xl"></i> -->
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+      <div class="navBarLinks">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#p-wine" class="nav-link">Pair my Wine</a></li>
+          <li><a href="#p-meal" class="nav-link">Pair my Meal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="headerContent">
+      <div class="design"></div>
+      <h1 id="home">The javascript sommelier</h1>
+    </div>
+  </header>
+  <!-- HEADER AND NAV BAR END -->
+  <body>
+    <!-- SECTION: ABOUT / HOW TO USE THIS APP START -->
+    <section class="how-to wrapper">
+      <div class="about-left">
+        <img
+          src="./assets/about-section-img-crop.jpg"
+          alt="Various colors of wine in bottles lined up infront of a white background"
+        />
+      </div>
+      <!--.about-left end-->
+
+      <div class="about-right">
+        <h3>pair food to your wine</h3>
+
+        <div class="about-steps">
+          <span>Step 1:</span>
+          <p>Decide what wine you're having</p>
+          <span>Step 2:</span>
+          <p>Select red or white to open menus</p>
+          <span>Step 3:</span>
+          <p>Choose your varietal from the drop down list</p>
+        </div>
+        <!--.about-steps end-->
+      </div>
+      <!--.about-right end-->
+    </section>
+    <!-- SECTION: ABOUT / HOW TO USE THIS APP END -->
+
+    <!-- SECTION: WINE SELECTOR AND INPUT START -->
+    <section id="p-wine" class="wine-input wrapper">
+      <h2>Select your wine details</h2>
+      <!-- RED OR WHITE? -->
+      <form action="" id="wine-form" name="wine-form">
+        <div>
+          <fieldset class="choose-wine">
+            <legend>Choose a Type of Wine</legend>
+            <div>
+              <input
+                type="radio"
+                id="white-wine-radio"
+                name="wine-radio"
+                value="white-wine"
+                class="radio-white"
+              />
+              <label for="white-wine">White</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="red-wine-radio"
+                name="wine-radio"
+                value="red-wine"
+                class="radio-red"
+              />
+              <label for="red-wine">Red</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- VARIETAL? -->
+        <div class="varietal-container">
+          <label for="varietal-select">Choose a varietal:</label>
+          <p class="choose">Start by choosing red or white</p>
+          <!-- WINE WINE RADIAL SELECTED-->
+          <select
+            name="white-wines"
+            id="white-options"
+            class="white-wine-list is-hidden"
+          >
+            <option value="" selected disabled>Tonight's White is:</option>
+            <option value="viognier">Viognier</option>
+            <option value="chardonnay">Chardonnay</option>
+            <option value="sauvignon_blanc">Sauvignon Blanc</option>
+            <option value="pinot_grigio">Pinot Grigio</option>
+            <option value="gewurztraminer">Gewurztraminer</option>
+            <option value="riesling">Riesling</option>
+          </select>
+          <!-- RED WINE RADIAL SELECTED -->
+          <select
+            name="red-wines"
+            id="red-options"
+            class="red-wine-list is-hidden"
+          >
+            <option value="" selected disabled>Tonight's Red is:</option>
+            <option value="cabernet_sauvignon">Cabernet Sauvignon</option>
+            <option value="merlot">Merlot</option>
+            <option value="shiraz">Shiraz</option>
+            <option value="petite_sirah">Petit Sirah</option>
+            <option value="primitivo">Primitivo</option>
+            <option value="pinot_noir">Pinot Noir</option>
+            <option value="malbec">Malbec</option>
+            <option value="negroamaro">Negroamaro</option>
+            <option value="rioja">Rioja</option>
+            <option value="zinfandel">Zinfandel</option>
+          </select>
+          <button type="submit">Ask Sommelier</button>
+        </div>
+        <!--.varietal-container end-->
+        <!-- VARIETAL INPUT END -->
+      </form>
+    </section>
+    <!-- SECTION: WINE SELECTOR AND INPUT END -->
+
+    <!-- SECTION: MEAL PAIR SUGGESTION START -->
+    <section class="meal-suggestion wrapper">
+      <!-- SUGGESTED MEAL OUTPUT IMAGE -->
+      <div class="meal-suggestion-img">
+        <img
+          src="./assets/adam-bartoszewicz-photo-crop.jpg"
+          alt="An elegantly set dinner table focusing on a salad and two glasses of wine"
+        />
+      </div>
+      <!--SUGGESTED MEAL OUTPUT TEXT  -->
+      <div class="meal-suggestion-text">
+        <h3>A great meal with your wine would be:</h3>
+        <p></p>
+      </div>
+    </section>
+    <!-- SECTION: MEAL PAIR SUGGESTION END -->
+
+    <!-- SECTION: HOW TO USE THE SOMMELIER-->
+    <section class="somm-about wrapper">
+      <div class="about-left">
+        <h3>pair wine to your food</h3>
+        <div class="about-steps">
+          <span>Step 1:</span>
+          <p>Decide what you're eating</p>
+          <span>Step 2:</span>
+          <p>Type a food name or cuisine type</p>
+          <span>Step 3:</span>
+          <p>Ask the sommelier for suggestions</p>
+        </div>
+        <!--.about-steps end-->
+      </div>
+      <!--.about-left end-->
+
+      <div class="about-right">
+        <img
+          src="./assets/maria-das-dores-img.jpg"
+          alt="A bottle of white wine next to a plate of steak and fries"
+        />
+      </div>
+      <!--.about-right end-->
+    </section>
+    <!-- SECTION: HOW TO USE THE SOMMELIER END-->
+
+    <!-- SECTION: WINE PAIR-->
+    <section class="food-input wrapper">
+      <h2>Enter your Meal</h2>
+      <div id="food-form" class="food-form">
+        <form action="" name="food-form">
+          <label for="meal-input" id="p-meal">What's for Dinner?</label>
+          <input
+            type="text"
+            name="meal-input"
+            class="meal-input"
+            id="meal-input"
+            placeholder="Try chicken or italian"
+          />
+          <button type="submit" class="meal-submit">Ask Sommelier</button>
+        </form>
+      </div>
+      <!-- SUGGESTED WINE OUTPUT -->
+      <div>
+        <h3>Javascript says:</h3>
+        <p class="wine-result"></p>
+      </div>
+    </section>
+
+    <!-- JAVA SCRIPT LINK -->
+    <script src="./javaScript/app.js"></script>
+    <!--JAVA LINK END  -->
+  </body>
+
+  <footer>
+    <hr />
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#p-wine">Pair my Wine</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="wrapper">
+      This App brought to you by
+      <a href="https://www.junocollege.com">Juno College</a>
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,63 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// WRAPPER:
+.wrapper{
+    width:80%;
+    max-width:1620px;
+    margin:0 auto;
+}
+
+// MULTI USE:
+
+.is-hidden{
+    display:none;
+}
+
+body{
+    background-color:$fb-red;
+}
+
+h2{
+    @include upper-ubuntu-w;
+    font-size:2rem;
+    margin-top:10%;
+}
+
+h3{
+    @include upper-ubuntu-rose;
+    font-size:2rem;
+    margin:0 auto;
+}
+
+hr{
+    height:5px;
+    background-color:$white-wine;
+    color:$white-wine;
+}
+img{
+    max-width: 408px;
+    max-height: 408px;
+}
+
+button{
+    height: 40px;
+    width: 160px;
+    background-color:$white-wine;
+    color:$fb-red;
+    border-radius:10%;
+    transition: all 0.5s ease-in;
+
+    &:hover, :focus{
+        background-color:$fb-red;
+        color:$white-wine;
+    }
+}
+input[type=radio]{
+    transition: all 0.5s ease-in;
+    &:hover, :focus{
+        scale:200%;
+        transform:translateX(-10%);
+        transform:translateY(-5%);
+    }
+}
